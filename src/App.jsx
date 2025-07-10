@@ -6,8 +6,6 @@ import HyperoniaView from './Components/HyperoniaView'
 import './App.css'
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
     <>
         <Header />
