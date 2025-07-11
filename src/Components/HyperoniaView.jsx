@@ -1,6 +1,6 @@
 import { useState } from "react"
 function HyperioniaView() {
-    const [count, setCount] = useState([{ num: 3, checked: false }, { num: 34, checked: false }, { num: 75, checked: false }])
+    const [count, setCount] = useState([{ num: 3, checked: false, addedBy: "Vel" }, { num: 34, checked: false, addedBy: "Azurae" }, { num: 75, checked: false, addedBy: "Dutzk" }])
     const clearAllItems = () => {
         setCount([])
     }
@@ -23,15 +23,15 @@ function HyperioniaView() {
     }
 
     return <div>
-        <section>
-            {count.map(({num, checked}, index) => {
-                return <div key={num}>
-                    <p className={checked ? "checked" : null}>{num}</p>
+        <ul>
+            {count.map(({ num, checked, addedBy }, index) => {
+                return <li key={num}>
+                    <p className={checked ? "checked" : null}>{addedBy} : {num}</p>
                     <button onClick={() => checkItem(index)}>Done</button>
                     <button onClick={() => clearItem(index)}>Remove</button>
-                </div>
+                </li>
             })}
-        </section>
+        </ul>
         <section>
             <button onClick={() => clearAllItems()}>Clear All</button>
             <button onClick={() => checkAllItems()}>Smashed It!</button>
