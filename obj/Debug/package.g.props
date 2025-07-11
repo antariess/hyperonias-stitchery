@@ -10,6 +10,7 @@
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonDependenciesTypesReactRouter Condition="$(PackageJsonDependenciesTypesReactRouter) == ''">^5.1.20</PackageJsonDependenciesTypesReactRouter>
+    <PackageJsonDependenciesMongodb Condition="$(PackageJsonDependenciesMongodb) == ''">^6.17.0</PackageJsonDependenciesMongodb>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.0</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactHookForm Condition="$(PackageJsonDependenciesReactHookForm) == ''">^7.60.0</PackageJsonDependenciesReactHookForm>
