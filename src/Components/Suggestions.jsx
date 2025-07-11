@@ -19,10 +19,10 @@ function Suggestions() {
         </ul>
         <form onSubmit={handleSubmit(setData)}>
             <label htmlFor="name">Your name: </label>
-            <input type="string" id="name" {...register("addedBy", { required: "Name is a required field." })} />*<br />
+            <input type="string" id="name" {...register("addedBy", { required: "Name is a required field." })} /> *<br />
             <p>{errors.addedBy?.message}</p>
             <label htmlFor="num">Number: </label>
-            <input type="number" min="0" max="400" id="number" {...register("num", { required: "Number is a required field" })} />*
+            <input type="number" min="0" max="400" id="number" {...register("num", { required: "Number is a required field" })} /> *
             <p>{errors.num?.message}</p>
             <br /><br />
             <button type="submit">Add!</button>
